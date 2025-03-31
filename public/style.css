@@ -1,3 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: aquamarine;
+    width: 100%;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f8459;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+footer {
+    background-color: #1f8459;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+footer p {
+    color: white;
+    font-weight: 500;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    padding: 128px 32px 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container-center {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+select {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 2px solid #1f8459;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    line-height: 100%;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.grid-item img {
+    cursor: pointer;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.grid-item img:hover {
+    scale: 1.2;
+    filter: brightness(.8);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-receita {
+    width: 100%;
+    padding: 128px 32px 64px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.grid-receita {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    gap: 16px;
+}
+
+form button {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background-color: #1f8459;
+    outline: none;
+    border: none;
 }
