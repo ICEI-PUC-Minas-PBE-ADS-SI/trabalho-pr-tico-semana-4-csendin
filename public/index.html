@@ -10,110 +10,111 @@
 
     <title>Diretório de Receitas</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="imgs/logo-invert.svg" alt="Logo">
+    <header class="bg-success fixed-top py-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <div>
+                <img src="imgs/logo-invert.svg" alt="Logo" class="img-fluid">
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#categorias">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container" id="home">
-        <div class="container-center">
-            <h1 style="text-align: center;">O que você quer preparar hoje?</h1>
-            <select id="select-btn">
-                <option value="" disabled selected>
-                    Selecione um prato
-                </option>
-                <option value="item1">Entradas</option>
-                <option value="item2">Pratos Principais</option>
-            </select>
-        </div>
+    <main class="container text-center mt-5 pt-5" id="home">
+        <h1>O que você quer preparar hoje?</h1>
+        <select class="form-select w-50 mx-auto">
+            <option value="" disabled selected>Selecione um prato</option>
+            <option value="item1">Entradas</option>
+            <option value="item2">Pratos Principais</option>
+        </select>
     </main>
 
-    <section class="container" id="categorias">
+    <section class="container py-5" id="categorias">
         <h1>Entradas</h1>
-        <div class="grid">
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/bolinho-de-arroz-1.jpeg" alt="Receita">
-                </div>
-                <a href="bolinho-de-arroz.html"><h3>Bolinho de arroz</h3></a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/bolinho-de-arroz-1.jpeg"
+                    alt="Bolinho de arroz">
+                <a href="bolinho-de-arroz.html" class="d-block text-center fw-bold mt-2">Bolinho de arroz</a>
             </div>
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/brusqueta.jpeg" alt="Receita">
-                </div>
-                <a href="brusqueta.html"><h3>Brusqueta</h3></a>
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/brusqueta.jpeg" alt="Brusqueta">
+                <a href="brusqueta.html" class="d-block text-center fw-bold mt-2">Brusqueta</a>
             </div>
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/dadinhos-de-tapioca-capa.png" alt="Receita">
-                </div>
-                <a href="dadinho-de-tapioca.html"><h3>Dadinho de tapioca</h3></a>
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/dadinhos-de-tapioca-capa.png"
+                    alt="Dadinho de tapioca">
+                <a href="dadinho-de-tapioca.html" class="d-block text-center fw-bold mt-2">Dadinho de tapioca</a>
             </div>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container py-5">
         <h1>Pratos Principais</h1>
-        <div class="grid">
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/file-de-frango-parmegiana.jpeg" alt="Receita">
-                </div>
-                <a href="file-de-frango.html"><h3>Filé de frango à parmegiana</h3></a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/file-de-frango-parmegiana.jpeg"
+                    alt="Filé de frango">
+                <a href="file-de-frango.html" class="d-block text-center fw-bold mt-2">Filé de frango à parmegiana</a>
             </div>
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/picanha-na-airfryer-capa.png" alt="Receita">
-                </div>
-                <a href="picanha-na-airfryer.html"><h3>Picanha na airfryer</h3></a>
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/picanha-na-airfryer-capa.png"
+                    alt="Picanha na airfryer">
+                <a href="picanha-na-airfryer.html" class="d-block text-center fw-bold mt-2">Picanha na airfryer</a>
             </div>
-            <div class="grid-item">
-                <div style="overflow: hidden;">
-                    <img src="https://www.receiteria.com.br/wp-content/uploads/espaguete-a-carbonara-rotated.jpeg" alt="Receita">
-                </div>
-                <a href="espaguete-a-carbonara.html"><h3>Espaguete à carbonara</h3></a>
+            <div class="col-md-4">
+                <img class="img-fluid rounded shadow"
+                    src="https://www.receiteria.com.br/wp-content/uploads/espaguete-a-carbonara-rotated.jpeg"
+                    alt="Espaguete à carbonara">
+                <a href="espaguete-a-carbonara.html" class="d-block text-center fw-bold mt-2">Espaguete à carbonara</a>
             </div>
         </div>
     </section>
 
-    <article class="container" id="contato">
+    <article class="container py-5" id="contato">
         <h1>Contato</h1>
-        <form action="index.html">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
+        <form class="w-50 mx-auto">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
         </form>
     </article>
 
-    <footer><p>© 2025 Caio Sendin. Todos os direitos reservados.</p></footer>
+    <footer class="bg-success text-white text-center py-3">
+        <p>© 2025 Caio Sendin. Todos os direitos reservados.</p>
+    </footer>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 
 </body>
