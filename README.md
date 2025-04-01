@@ -8,14 +8,15 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Caio Rezende Barreto Sendin
+- Matricula: 881629
+- Proposta de projeto escolhida: Diretório de Receitas
+- Breve descrição sobre seu projeto: Um site de receitas em HTML e CSS com páginas individuais para cada receita, acessadas por cards interativos
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Desktop](public/imgs/telas/home.png)
+![Mobile](public/imgs/telas/home-mobile.png)
 
 ## Print da versão responsiva com Bootstrap
 
